@@ -1,0 +1,84 @@
+.slider {
+    overflow: hidden;
+}
+
+.slider_container {
+    position: relative;
+}
+
+.slider_wrapper {
+    display: flex;
+    margin: 0 -3rem;
+    transition: var(--default-transition);
+}
+
+.slider_slide {
+    min-width: calc(100% - 2rem);
+    padding: 0 3rem;
+    opacity: 0.6;
+    max-height: 50rem;
+
+    &.active {
+        opacity: 1;
+    }
+
+    @include vp-767 {
+        min-width: 100%;
+    }
+}
+
+.slider_buttons {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 7.3rem;
+    right: 3.5rem;
+    bottom: 0;
+
+    @include vp-767 {
+        position: static;
+        margin: 2rem 1rem 0 auto;
+        width: 10rem;
+    }
+}
+
+.slider_button {
+    position: relative;
+    width: 2.6rem;
+    height: 4.5rem;
+
+    &::before {
+        content: '';
+        position: absolute;
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background-image: url('../img/svg/arrow-slider-normal.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: var(--default-transition);
+
+        @include vp-767 {
+            transform: scale(70%);
+        }
+    }
+
+    &:hover {
+        &::before {
+            background-image: url('../img/svg/arrow-slider-hover.svg');
+        }
+    }
+
+    &--back {
+        &::before {
+            transform: rotate(180deg);
+
+            @include vp-767 {
+                transform: scale(70%) rotate(180deg);
+            }
+        }
+    }
+}

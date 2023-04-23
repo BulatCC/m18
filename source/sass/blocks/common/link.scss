@@ -1,0 +1,33 @@
+.link {
+    display: inline-flex;
+    align-items: center;
+
+    &:hover {
+        color: var(--color-orange);
+    }
+
+    &--border-bottom {
+        border-bottom: 0.2rem solid var(--color-orange);
+    }
+}
+
+.link_img {
+    max-width: 3rem;
+    max-height: 3rem;
+    margin-right: 0.8rem;
+
+    @include vp-767 {
+        max-width: 2rem;
+        max-height: 2rem;
+    }
+}
+
+.link_title {
+    font-size: 2.1rem;
+    line-height: 1.43;
+    transition: var(--default-transition);
+
+    @include vp-767 {
+        font-size: 1.8rem;
+    }
+}

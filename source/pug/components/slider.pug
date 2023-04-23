@@ -1,0 +1,13 @@
+.slider(data-slider)
+    .container.container--md.slider_container
+        .slider_wrapper(data-slider-wrapper)
+            - for (let i = 0; i < 5; i++) {
+                .slider_slide(data-slider-card)
+                    .slider-card
+                        .slider-card_img-wrap
+                            img(src=`img/slide-${i + 1}.jpg`, alt="Интерьер").slider-card_img
+                        p.slider-card_text Кафельная плитка в&nbsp;ванной комнате в&nbsp;скандинавском стиле
+            - }
+        .slider_buttons
+            button.slider_button.slider_button--back(data-slider-button-prev)
+            button.slider_button(data-slider-button-next)

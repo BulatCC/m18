@@ -1,0 +1,26 @@
+section.subscribe-form
+    .subscribe-form_anchor(id="form")
+    .container.container--md
+        form.form(data-form)
+            h2.form_title.title.title--md Узнайте о&nbsp;запуске сервиса первым
+            .form_container.active(data-form-container)
+                .form_promo-wrap
+                    img(src="img/svg/door.svg", alt="дверь").form_promo-img
+                    p.form_promo-text Первым 10&nbsp;клиентам стальная входная дверь в&nbsp;подарок
+                .form_input-wrap(data-form-input-wrap)
+                    input(type="text" placeholder="Имя и фамилия*" name="name" data-form-name).form_input
+                    span.form_input-placeholder Имя и фамилия*
+                .form_input-wrap(data-form-input-wrap)
+                    input(type="email" placeholder="Е-mail адрес*" name="email" data-form-email).form_input
+                    span.form_input-placeholder Е-mail адрес*
+                .form_input-wrap(data-form-input-wrap)
+                    input(type="tel" placeholder="Телефон" name="tel" data-form-tel).form_input
+                    span.form_input-placeholder Телефон
+                button(data-form-button disabled).form_button.button Подписаться
+                p.form_agree * Обязательные для заполнения поля
+                a(href="#").form_agree-link Политика конфиденциальности
+            .form_submited-container(data-submited-container)
+                img(src="img/svg/check-mark.svg", alt="Галочка").form_submit-success-img
+                p.form_promo-text Спасибо! Мы&nbsp;будем держать вас в&nbsp;курсе обновлений
+                br
+                strong Введенные значения:

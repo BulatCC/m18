@@ -1,0 +1,38 @@
+// Vendor
+// ---------------------------------
+
+@import "vendor/normalize";
+
+// Global
+// ---------------------------------
+
+@import "variables";
+@import "mixins";
+@import "global/fonts";
+@import "global/reboot";
+@import "global/utils";
+@import "global/container";
+
+// common
+// ---------------------------------
+@import "blocks/common/link";
+@import "blocks/common/logo";
+@import "blocks/common/title";
+@import "blocks/common/button";
+@import "blocks/common/arrow-link";
+@import "blocks/common/mint-text";
+@import "blocks/common/social";
+
+// ui
+// ---------------------------------
+@import "blocks/ui/header";
+@import "blocks/ui/footer";
+@import "blocks/ui/accent";
+@import "blocks/ui/main-screen";
+@import "blocks/ui/player";
+@import "blocks/ui/plug-page";
+@import "blocks/ui/info";
+@import "blocks/ui/slider";
+@import "blocks/ui/slider-card";
+@import "blocks/ui/form";
+@import "blocks/ui/subscribe-form";

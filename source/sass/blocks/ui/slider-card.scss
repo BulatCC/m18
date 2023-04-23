@@ -1,0 +1,27 @@
+.slider-card {
+    display: grid;
+    grid-template-columns: 83% 15%;
+    gap: 2%;
+    height: 100%;
+
+    @include vp-767 {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+.slider-card_img-wrap {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slider-card_img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.slider-card_text {
+    color: var(--color-grey);
+    font-size: 1.3rem;
+}

@@ -1,0 +1,38 @@
+.plug-page {
+    .main-screen {
+        margin-bottom: 16.6rem;
+    }
+
+    .main-screen,
+    .info,
+    .interior,
+    .subscribe-form {
+        @include vp-1023 {
+            margin-bottom: 11.6rem;
+        }
+
+        @include vp-767 {
+            margin-bottom: 8.1rem;
+        }
+    }
+
+    .info {
+        margin-bottom: 18.4rem;
+    }
+
+    .interior {
+        margin-bottom: 13.5rem;
+
+        .interior_title-wrap {
+            margin-bottom: 5.2rem;
+
+            @include vp-767 {
+                margin-bottom: 3.7rem;
+            }
+        }
+    }
+
+    .subscribe-form {
+        margin-bottom: 13.4rem;
+    }
+}

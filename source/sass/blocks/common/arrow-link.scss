@@ -1,0 +1,39 @@
+.arrow-link {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 5.3rem;
+    min-height: 3rem;
+    color: var(--color-orange);
+    line-height: 1.12;
+    font-weight: 500;
+
+    @include vp-767 {
+        padding-left: 4.5rem;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        margin: auto;
+        width: 4.2rem;
+        height: 3.2rem;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background-image: url('../img/svg/arrows-normal.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: var(--default-transition);
+
+        @include vp-767 {
+            transform: scale(70%);
+        }
+    }
+
+    &:hover {
+        &::before {
+            background-image: url('../img/svg/arrows-hover.svg');
+        }
+    }
+}

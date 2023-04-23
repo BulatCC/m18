@@ -1,0 +1,10 @@
+.logo {
+    width: 20rem;
+    height: 5.5rem;
+
+    @include vp-767 {
+        width: 14rem;
+        height: 3.85rem;
+    }
+}
+

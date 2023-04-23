@@ -1,0 +1,40 @@
+.info {
+    .info_title {
+        margin-bottom: 0;
+    }
+}
+
+.info_text {
+    margin-bottom: 6.2rem;
+
+    @include vp-767 {
+        margin-bottom: 4.3rem;
+    }
+}
+
+.info_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+
+    @include vp-767 {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+.info_list-item {
+    padding: 3.3rem 0;
+    border-top: 0.4rem solid var(--color-mint-light);
+
+    @include vp-767 {
+        padding: 2.3rem 0;
+    }
+
+    &--accent {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        border: 0.4rem solid var(--color-mint-light);
+    }
+}

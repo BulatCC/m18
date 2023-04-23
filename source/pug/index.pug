@@ -1,0 +1,21 @@
+extends ./layout/layout
+
+block variables
+  - const title = 'Ремонт квартирв типовых домах'
+
+block content
+    .plug-page
+        section.main-screen
+            .container
+                .main-screen_container
+                    include components/accent.pug
+                    include components/player.pug
+                    a(href="#info").arrow-link.main-screen_link Листайте вниз, <br> чтобы ничего не упустить
+        include components/info.pug
+        section.interior
+            .interior_title-wrap
+                .container.container--md
+                    h2.title.title--md 3 стиля интерьера
+                    p.mint-text Скандинавский, классический и&nbsp;эко-стиль
+            include components/slider.pug
+        include components/form.pug

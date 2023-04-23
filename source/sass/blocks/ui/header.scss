@@ -1,0 +1,24 @@
+.header {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    padding: 4.8rem 9rem  2.4rem 7rem;
+
+    @include vp-1279 {
+        padding-left: 0;
+        padding-right: 5rem;
+    }
+
+    @include vp-1023 {
+        padding: 2.4rem 0 1.5rem 0;
+    }
+}

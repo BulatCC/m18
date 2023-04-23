@@ -1,0 +1,42 @@
+.main-screen {
+    @include vp-1023 {
+        padding-top: var(--header-height);
+    }
+    @include vp-767 {
+        padding-top: var(--header-height-mob);
+    }
+}
+
+.main-screen_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    position: relative;
+    padding: 2rem 0 0 7rem;
+    height: 100vh;
+
+    @include vp-1279 {
+
+    }
+
+    @include vp-1023 {
+        grid-template-columns: 1fr;
+        padding: 0;
+        height: auto;
+    }
+}
+
+.main-screen_link {
+    position: absolute;
+    left: 5.3rem;
+    bottom: 5rem;
+
+    @include vp-1279 {
+        left: 0;
+    }
+
+    @include vp-1023 {
+        position: relative;
+        bottom: 0;
+    }
+}
