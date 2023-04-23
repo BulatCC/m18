@@ -1,5 +1,3 @@
 export const fakeApi = () => new Promise((resolve) => {
-    window.setTimeout(() => {
-        resolve('200');
-    }, 1000);
+    setTimeout(() => resolve('200'), 1000);
 });
