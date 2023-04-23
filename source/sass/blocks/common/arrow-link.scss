@@ -12,6 +12,7 @@
         padding-left: 4.5rem;
     }
 
+    &::after,
     &::before {
         content: '';
         position: absolute;
@@ -31,9 +32,17 @@
         }
     }
 
+    &::before {
+        opacity: 0;
+        background-image: url('../img/svg/arrows-hover.svg');
+    }
+
     &:hover {
         &::before {
-            background-image: url('../img/svg/arrows-hover.svg');
+            opacity: 1;
+        }
+        &::after {
+            opacity: 0;
         }
     }
 }
